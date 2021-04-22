@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<launch>
+    <!--<include file="$(find ardrone_autonomy)/launch/ardrone.launch" ns="AR_0" >
+        <arg name="ip" value="192.168.0.10" />
+    </include> --> 
+    <node name="flight_controller_0" pkg="bernstein_flight_control"
+          type="ar_flight_controller.py" output="screen"
+          ns="AR_0" />
+         
+    <!--<include file="$(find ardrone_autonomy)/launch/ardrone.launch" ns="AR_1" >
+        <arg name="ip" value="192.168.0.11" />
+    </include> --> 
+    <node name="flight_controller_1" pkg="bernstein_flight_control"
+          type="ar_flight_controller.py" output="screen"
+          ns="AR_1" />
+    
+    <!-- <include file="$(find ardrone_autonomy)/launch/ardrone.launch" ns="AR_2" >
+        <arg name="ip" value="192.168.0.12" />
+    </include> --> 
+    <node name="flight_controller_2" pkg="bernstein_flight_control"
+          type="ar_flight_controller.py" output="screen" 
+          ns="AR_2" />
+</launch>
+

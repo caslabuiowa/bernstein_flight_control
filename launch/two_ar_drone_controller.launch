@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+    <node name="flight_controller_0" pkg="bernstein_flight_control"
+          type="ar_flight_controller.py" output="screen"
+          ns="AR_0" />
+         
+    <node name="flight_controller_1" pkg="bernstein_flight_control"
+          type="ar_flight_controller.py" output="screen"
+          ns="AR_1" />
+</launch>
+
